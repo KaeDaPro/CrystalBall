@@ -37,6 +37,10 @@ public class CrystalBall extends AppCompatActivity {
             if(acceleration > 15) {
 
                 MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.ding);
+                mediaPlayer.start();
+
+                String ans = Predictions.get().getPrediction();
+                answerText.setText(ans);
 
                 Toast toast = Toast.makeText(getApplication(), "Device has shaken", Toast.LENGTH_SHORT);
                 toast.show();

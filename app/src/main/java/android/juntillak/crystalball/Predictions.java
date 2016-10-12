@@ -1,9 +1,13 @@
 package android.juntillak.crystalball;
 
+import java.util.Random;
+
 public class Predictions {
 
     private static Predictions predictions;
     private String[] answers;
+    private Random random = new Random();
+    private int rnd;
 
     private Predictions() {
         answers = new String[] {
@@ -21,6 +25,7 @@ public class Predictions {
     }
 
     public String getPrediction() {
-        return answers[0];
+        rnd = random.nextInt(answers.length);
+        return answers[rnd];
     }
 }
