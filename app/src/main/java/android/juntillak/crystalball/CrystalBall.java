@@ -36,7 +36,7 @@ public class CrystalBall extends AppCompatActivity {
 
             if(acceleration > 15) {
 
-                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.ding);
+                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.regularbell);
                 mediaPlayer.start();
 
                 String ans = Predictions.get().getPrediction();

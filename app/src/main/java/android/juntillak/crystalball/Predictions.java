@@ -11,8 +11,9 @@ public class Predictions {
 
     private Predictions() {
         answers = new String[] {
-                "Your Food is Being made",
-                "You Food was Burnt"
+                "Ham and cheese sandwich",
+                "Your food is being made shake again";
+                "Have not decided a food yet";
 
         };
     }
